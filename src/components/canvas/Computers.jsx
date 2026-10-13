@@ -29,29 +29,25 @@ const Computers = ({ isMobile }) => {
 
 const ComputerCanvas = () => {
   const [isMobile, setIsMobile] = useState(
-    () => window.matchMedia("(max-width: 500px)").matches
+    () => window.matchMedia("(max-width: 500px)").matches,
   );
-
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
-    const handleMediaQueryChange = (event) => setIsMobile(event.matches);
-    mediaQuery.addEventListener("change", handleMediaQueryChange);
-    return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
-  }, []);
+  // Add a listener for changes to the screen size
+  const mediaQuery = window.matchMedia("(max-width: 500px)");
 
-  // On mobile, skip the heavy 3D scene entirely and show a static image.
-  if (isMobile) {
-    return (
-      <div className="w-full h-full flex items-center justify-center">
-        <img
-          src="/desktop_pc/scene-fallback.webp"
-          alt="Desktop PC"
-          className="w-full h-full object-contain"
-        />
-      </div>
-    );
-  }
+  // Update isMobile when the screen size changes
+  const handleMediaQueryChange = (event) => {
+    setIsMobile(event.matches);
+  };
 
+  // Listen for screen size changes
+  mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+  // Remove the listener when the component is unmounted
+  return () => {
+    mediaQuery.removeEventListener("change", handleMediaQueryChange);
+  };
+}, []);
   return (
     <Canvas
       frameloop="demand"
@@ -65,7 +61,7 @@ const ComputerCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computers isMobile={false} />
+        <Computers isMobile={isMobile} />
       </Suspense>
       <Preload all />
     </Canvas>
