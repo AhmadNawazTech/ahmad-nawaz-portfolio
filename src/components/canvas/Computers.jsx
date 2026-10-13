@@ -41,7 +41,15 @@ const ComputerCanvas = () => {
 
   // On mobile, skip the heavy 3D scene entirely and show a static image.
   if (isMobile) {
-    return null;
+    return (
+      <div className="w-full h-full flex items-center justify-center">
+        <img
+          src="/desktop_pc/scene-fallback.webp"
+          alt="Desktop PC"
+          className="w-full h-full object-contain"
+        />
+      </div>
+    );
   }
 
   return (
