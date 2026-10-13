@@ -29,25 +29,21 @@ const Computers = ({ isMobile }) => {
 
 const ComputerCanvas = () => {
   const [isMobile, setIsMobile] = useState(
-    () => window.matchMedia("(max-width: 500px)").matches,
+    () => window.matchMedia("(max-width: 500px)").matches
   );
+
   useEffect(() => {
-  // Add a listener for changes to the screen size
-  const mediaQuery = window.matchMedia("(max-width: 500px)");
+    const mediaQuery = window.matchMedia("(max-width: 500px)");
+    const handleMediaQueryChange = (event) => setIsMobile(event.matches);
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+    return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
+  }, []);
 
-  // Update isMobile when the screen size changes
-  const handleMediaQueryChange = (event) => {
-    setIsMobile(event.matches);
-  };
+  // On mobile, skip the heavy 3D scene entirely and show a static image.
+  if (isMobile) {
+    return null;
+  }
 
-  // Listen for screen size changes
-  mediaQuery.addEventListener("change", handleMediaQueryChange);
-
-  // Remove the listener when the component is unmounted
-  return () => {
-    mediaQuery.removeEventListener("change", handleMediaQueryChange);
-  };
-}, []);
   return (
     <Canvas
       frameloop="demand"
@@ -61,7 +57,7 @@ const ComputerCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computers isMobile={isMobile} />
+        <Computers isMobile={false} />
       </Suspense>
       <Preload all />
     </Canvas>
