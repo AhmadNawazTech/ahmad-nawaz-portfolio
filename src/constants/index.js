@@ -197,27 +197,27 @@
     ];
 
     const projects = [
-    {
-        name: "Car Rent",
-        description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-        tags: [
+   {
+    name: "AI Pizza OrderBot",
+    description:
+    "An AI-powered pizza ordering chatbot built with Python, Panel, and Google's Gemini API. It allows users to interact through a conversational interface, explore pizza options, place orders, and receive intelligent responses for a smooth ordering experience.",
+    tags: [
         {
-            name: "react",
+            name: "python",
             color: "blue-text-gradient",
         },
         {
-            name: "mongodb",
+            name: "panel",
             color: "green-text-gradient",
         },
         {
-            name: "tailwind",
+            name: "gemini api",
             color: "pink-text-gradient",
         },
-        ],
-        image: carrent,
-        source_code_link: "[https://github.com/](https://github.com/)",
-    },
+    ],
+    image: orderbot,
+    source_code_link: "https://github.com/AhmadNawazTech/OrderBot",
+},
     {
         name: "Job IT",
         description:
