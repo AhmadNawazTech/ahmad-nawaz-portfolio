@@ -19,9 +19,9 @@
     starbucks,
     tesla,
     shopify,
-    carrent,
-    jobit,
-    tripguide,
+    orderbot,
+    resumeAnalyzer,
+    ecommerce,
     // threejs,
     } from "../assets";
 
@@ -219,46 +219,31 @@
     source_code_link: "https://github.com/AhmadNawazTech/OrderBot",
 },
     {
-        name: "Job IT",
+        name: "AI Resume Analyzer",
         description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-        tags: [
-        {
-            name: "react",
-            color: "blue-text-gradient",
-        },
-        {
-            name: "restapi",
-            color: "green-text-gradient",
-        },
-        {
-            name: "scss",
-            color: "pink-text-gradient",
-        },
-        ],
-        image: jobit,
-        source_code_link: "[https://github.com/](https://github.com/)",
+        "An AI-powered resume analysis application built with Python, Flask, and Google's Gemini API. It analyzes resumes, extracts skills, identifies missing skills, generates personalized learning roadmaps, and provides relevant interview questions to help users improve their career readiness.",
+    tags: [
+        { name: "python", color: "blue-text-gradient" },
+        { name: "flask", color: "green-text-gradient" },
+        { name: "gemini api", color: "pink-text-gradient" },
+        { name: "tidb", color: "blue-text-gradient" },
+    ],
+    image: resumeAnalyzer,
+    source_code_link: "https://github.com/AhmadNawazTech/AI-Resume-Analyzer",
     },
+
     {
-        name: "Trip Guide",
+        name: "E-commerce Web Application",
         description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-        tags: [
-        {
-            name: "nextjs",
-            color: "blue-text-gradient",
-        },
-        {
-            name: "supabase",
-            color: "green-text-gradient",
-        },
-        {
-            name: "css",
-            color: "pink-text-gradient",
-        },
-        ],
-        image: tripguide,
-        source_code_link: "[https://github.com/](https://github.com/)",
+        "A full-stack e-commerce web application designed to provide a smooth online shopping experience. It features product browsing, product details, shopping cart functionality, user authentication, and order management, with a responsive interface and backend database integration.",
+    tags: [
+        { name: "react", color: "blue-text-gradient" },
+        { name: "nodejs", color: "green-text-gradient" },
+        { name: "express", color: "pink-text-gradient" },
+        { name: "mongodb", color: "blue-text-gradient" },
+    ],
+        image: ecommerce,
+        source_code_link: "YOUR_ECOMMERCE_GITHUB_REPOSITORY_URL",
     },
     ];
 

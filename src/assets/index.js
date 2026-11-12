@@ -26,9 +26,9 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.webp";
-import jobit from "./jobit.webp";
-import tripguide from "./tripguide.webp";
+import orderbot from "./orderbot.webp";
+import resumeAnalyzer from "./resumeAnalyzer.webp";
+import ecommerce from "./ecommerce.webp";
 
 export {
   logo,
@@ -56,7 +56,7 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
+  orderbot,
+  resumeAnalyzer,
+  ecommerce,
 };
