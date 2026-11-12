@@ -27,8 +27,8 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
 import orderbot from "./orderbot.webp";
-import jobit from "./jobit.webp";
-import tripguide from "./tripguide.webp";
+import resumeAnalyzer from "./resumeAnalyzer.webp";
+import ecommerce from "./ecommerce.webp";
 
 export {
   logo,
@@ -57,6 +57,6 @@ export {
   starbucks,
   tesla,
   orderbot,
-  jobit,
-  tripguide,
+  resumeAnalyzer,
+  ecommerce,
 };
