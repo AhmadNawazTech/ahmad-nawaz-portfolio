@@ -26,7 +26,7 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.webp";
+import orderbot from "./orderbot.webp";
 import jobit from "./jobit.webp";
 import tripguide from "./tripguide.webp";
 
@@ -56,7 +56,7 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
+  orderbot,
   jobit,
   tripguide,
 };
