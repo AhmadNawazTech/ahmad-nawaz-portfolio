@@ -19,7 +19,7 @@
     starbucks,
     tesla,
     shopify,
-    carrent,
+    orderbot,
     jobit,
     tripguide,
     // threejs,
@@ -215,7 +215,7 @@
             color: "pink-text-gradient",
         },
     ],
-    image: carrent,
+    image: orderbot,
     source_code_link: "https://github.com/AhmadNawazTech/OrderBot",
 },
     {
