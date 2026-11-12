@@ -215,7 +215,7 @@
             color: "pink-text-gradient",
         },
     ],
-    image: orderbot,
+    image: carrent,
     source_code_link: "https://github.com/AhmadNawazTech/OrderBot",
 },
     {
