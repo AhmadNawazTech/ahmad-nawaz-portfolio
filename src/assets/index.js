@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import backend from "./backend.png";
-import creator from "./creator.png";
+import ai from "./ai.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
@@ -33,7 +33,7 @@ import ecommerce from "./ecommerce.webp";
 export {
   logo,
   backend,
-  creator,
+  ai,
   mobile,
   web,
   github,
