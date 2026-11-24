@@ -27,10 +27,6 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-// _Mmyzpibl_D1vgs8r
-// template_suxejwj
-// service_2114wqy
-
     emailjs.send(
   'service_2114wqy',
   'template_suxejwj',
@@ -55,9 +51,12 @@ const Contact = () => {
 })
 .catch((error) => {
   setLoading(false);
-  console.log(error);
 
-  alert('Something went wrong.');
+  console.error("EmailJS Error:", error);
+
+  alert(
+    `Message failed!\nError: ${error.text || error.message || "Unknown error"}\nStatus: ${error.status || "Unknown"}`
+  );
 });
 }
   return (

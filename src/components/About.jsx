@@ -37,12 +37,9 @@ const About = () => {
         variants={fadeIn(0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-5xl leading-[30px] text-justify"
       >
-        I'm an independent full-stack developer focused on building responsive web applications and practical AI-powered tools.
-        I work with React, JavaScript, Node.js, Express, MongoDB, and Python. Through independent projects such as an AI Resume
-        Analyzer and an AI Pizza OrderBot, I've gained practical experience building user interfaces, connecting backend services,
-        working with databases, and integrating AI APIs.
-        I enjoy solving real-world problems through technology and continuously improving my development skills. I'm open to junior
-        developer opportunities, internships, and freelance projects where I can contribute and grow.
+        I'm a full-stack developer focused on building responsive web applications and practical AI-powered tools. I work with React, JavaScript, Node.js, Express, MongoDB, and Python.<br/>
+        Through personal projects like an AI Resume Analyzer and an AI Pizza OrderBot, I've gained hands-on experience building user interfaces, connecting backend services and databases, and integrating AI APIs.<br/>
+        I enjoy solving real-world problems through technology and am open to junior developer opportunities, internships, and freelance projects where I can contribute and grow.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
