@@ -35,14 +35,14 @@ const About = () => {
 
       <motion.p
         variants={fadeIn(0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify"
+        className="mt-4 text-secondary text-[17px] max-w-5xl leading-[30px] text-justify"
       >
-        I am a full-stack web developer who builds modern, responsive, and
-        scalable web applications with a strong focus on user experience and
-        clean engineering. My core stack includes React, JavaScript, Node.js,
-        Express, MongoDB, and Python. I enjoy turning ideas into polished
-        products—from intuitive interfaces and robust APIs to database-driven
-        applications and AI-powered features.
+        I'm an independent full-stack developer focused on building responsive web applications and practical AI-powered tools.
+        I work with React, JavaScript, Node.js, Express, MongoDB, and Python. Through independent projects such as an AI Resume
+        Analyzer and an AI Pizza OrderBot, I've gained practical experience building user interfaces, connecting backend services,
+        working with databases, and integrating AI APIs.
+        I enjoy solving real-world problems through technology and continuously improving my development skills. I'm open to junior
+        developer opportunities, internships, and freelance projects where I can contribute and grow.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

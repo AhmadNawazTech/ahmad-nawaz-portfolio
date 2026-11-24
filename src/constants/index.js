@@ -14,11 +14,11 @@
     mongodb,
     git,
     figma,
-    // docker,
+    /* docker,
     meta,
     starbucks,
     tesla,
-    shopify,
+    shopify,  */
     orderbot,
     resumeAnalyzer,
     ecommerce,
@@ -31,8 +31,8 @@
         title: "About",
     },
     {
-        id: "work",
-        title: "Work",
+        id: "projects",
+        title: "Projects",
     },
     {
         id: "contact",
@@ -113,7 +113,7 @@
     //     icon: docker,
     // },
     ];
-
+/*
     const experiences = [
     {
         title: "React.js Developer",
@@ -195,9 +195,9 @@
         image: "[https://randomuser.me/api/portraits/women/6.jpg](https://randomuser.me/api/portraits/women/6.jpg)",
     },
     ];
-
+*/
     const projects = [
-   {
+    {
     name: "AI Pizza OrderBot",
     description:
     "An AI-powered pizza ordering chatbot built with Python, Panel, and Google's Gemini API. It allows users to interact through a conversational interface, explore pizza options, place orders, and receive intelligent responses for a smooth ordering experience.",
@@ -247,4 +247,4 @@
     },
     ];
 
-    export { services, technologies, experiences, testimonials, projects };
+    export { services, technologies,/* experiences, testimonials,*/ projects };
